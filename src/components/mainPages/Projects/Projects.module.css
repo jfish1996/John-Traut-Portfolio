@@ -1,0 +1,30 @@
+.projectdivContainer {
+  /* height: 75vh; */
+  background-color: #3a4443;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectdivContainer > h1 {
+  font-size: 2rem;
+  color: #fcfaf6;
+  margin-top: 10px;
+}
+
+.projectmainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+@media (min-width: 800px) {
+  .projectmainContent {
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+  }
+}

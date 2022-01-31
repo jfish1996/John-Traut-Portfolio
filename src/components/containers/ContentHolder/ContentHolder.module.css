@@ -1,0 +1,26 @@
+.container {
+  background: radial-gradient(ellipse at bottom, #0e141b 0%, #090a0f 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all ease-in-out 1s;
+}
+
+.morningTheme {
+  background: rgb(255, 195, 113);
+  color: white;
+  transition: all ease-in-out 1s;
+}
+
+.afternoonTheme {
+  background: rgb(97, 67, 133);
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+.nightTheme {
+  background: #0e141b;
+}

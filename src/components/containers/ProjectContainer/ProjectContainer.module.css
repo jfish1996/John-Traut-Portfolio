@@ -1,0 +1,87 @@
+.card {
+  border-radius: 0.2rem;
+  margin: 10px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.imgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.imgOverlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.imgOverlay:hover > * {
+  transform: translateY(0);
+}
+
+.imgOverlay:hover {
+  opacity: 1;
+}
+
+.imgOverlayTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.imgOverlayDesc {
+  font-size: 1em;
+  margin-top: 0.25em;
+  margin: 10px;
+  /* line-height: 1.7; */
+}
+
+.imgOverlayIcon {
+  width: 50px;
+}
+.imgOverlayShopIcon {
+  background-color: white;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.imgOverlayIcon:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+.imgOverlayShopIcon:hover {
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hidden {
+  margin-top: -80px;
+}
+
+.show {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 700px;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+}

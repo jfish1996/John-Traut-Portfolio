@@ -1,0 +1,45 @@
+.navBar {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  transform: translateY(-200%);
+  animation: moveTheNav ease 1s forwards 6s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger {
+  height: 40px;
+  width: 40px;
+  /* background-color: white; */
+  margin: 10px;
+  border-radius: 60px;
+}
+
+.fish {
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.none {
+  display: none;
+}
+
+.burger:hover {
+  background-color: lavender;
+}
+
+@keyframes moveTheNav {
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.scrolling {
+  opacity: 0.8;
+}

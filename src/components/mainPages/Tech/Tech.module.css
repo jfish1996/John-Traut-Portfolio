@@ -1,0 +1,51 @@
+.techContainer {
+  /* height: 75vh; */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.bigImg {
+  display: none;
+}
+
+.techContainer > .techBox > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px;
+  /* border: 1px black solid; */
+}
+
+.techBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin: 10px; */
+  margin: 10px;
+}
+
+.techContainer > .techBox > h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  flex: 1 100%;
+}
+
+@media (min-width: 1070px) {
+  .bigImg {
+    display: block;
+    height: 40rem;
+    width: 50%;
+    /* object-fit: cover; */
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .techContainer > .techBox > img {
+    width: 120px;
+    height: 120px;
+  }
+}
